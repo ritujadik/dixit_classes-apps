@@ -1,0 +1,31 @@
+<head>
+    <meta charset="UTF-8">
+    <title>DIXIT CLASSES |Register Page  </title>
+</head>
+<body>
+
+     <h1>DIXIT CLASSES </h1>
+
+     <h3>Register Here</h3>
+
+      {% if message%}
+        <p style = "Color:Yellow">{{ message }}</p>
+     {% endif%}
+
+
+     <form action = "/perform_registration" method = "post">
+         <label>Name</label><br>
+          <input type="text" name="user_name" required><br>
+          <label>Email</label><br>
+         <input type="email" name="user_mail" required><br>
+         <label>Password</label><br>
+         <input type = "password" name="user_password" required><br><br>
+         <input type = "Submit" value = Register><br>
+     </form>
+
+    <p>Already a member? <a href="/"> Please Login Here </a></p>
+
+
+
+</body>
+</html>

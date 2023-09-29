@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DIXIT CLASSES |Login Page  </title>
+</head>
+<body>
+
+     <h1>DIXIT CLASSES </h1>
+
+     <h3>Login Here</h3>
+
+     {% if message%}
+        <p style = "Color:Red">{{ message }}</p>
+     {% endif%}
+
+     <form action ="/perform_login" method="post">
+         <label>Email</label><br>
+         <input type="email" name = "user_email"><br>
+         <label>Password</label><br>
+         <input type = "password" name = "user_password"><br><br>
+         <input type = "Submit" value = Login><br>
+     </form>
+
+    <p>Not a member? <a href="/register"> Please Register Here </a></p>
+
+
+
+</body>
+</html>
